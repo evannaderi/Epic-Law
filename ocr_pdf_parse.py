@@ -1,28 +1,42 @@
-import pytesseract
-from pdf2image import convert_from_path
-import PyPDF2
-# import sys
+from google.api_core.client_options import ClientOptions
+from google.cloud import documentai
 
-def extract_text_from_image_pdf(pdf_path, output_path):
-    # Convert PDF pages to images
-    images = convert_from_path(pdf_path)
-    
-    # Extract text from each image using OCR
-    all_text = ""
-    for i, image in enumerate(images):
-        text = pytesseract.image_to_string(image)
-        all_text += text
 
-    # Write the extracted text to an output file
-    with open(output_path, 'w', encoding="utf-8") as output_file:
-        output_file.write(all_text)
+PROJECT_ID = "intrepid-alloy-401317"
+LOCATION = "us"  # Format is 'us' or 'eu'
+PROCESSOR_ID = "a448e307b426c48a"  # Create processor in Cloud Console
 
-if __name__ == "__main__":
-    # if len(sys.argv) != 3:
-    #     print("Usage: python script_name.py input.pdf output.txt")
-    #     sys.exit(1)
-    
-    input_pdf_path = "report.pdf"
-    output_txt_path = "output.txt"
+# The local file in your current working directory
+FILE_PATH = "documents/report.pdf"
+# Refer to https://cloud.google.com/document-ai/docs/file-types
+# for supported file types
+MIME_TYPE = "application/pdf"
 
-    extract_text_from_image_pdf(input_pdf_path, output_txt_path)
+# Instantiates a client
+docai_client = documentai.DocumentProcessorServiceClient(
+    client_options=ClientOptions(api_endpoint=f"{LOCATION}-documentai.googleapis.com")
+)
+
+# The full resource name of the processor, e.g.:
+# projects/project-id/locations/location/processor/processor-id
+# You must create new processors in the Cloud Console first
+RESOURCE_NAME = docai_client.processor_path(PROJECT_ID, LOCATION, PROCESSOR_ID)
+
+# Read the file into memory
+with open(FILE_PATH, "rb") as image:
+    image_content = image.read()
+
+# Load Binary Data into Document AI RawDocument Object
+raw_document = documentai.RawDocument(content=image_content, mime_type=MIME_TYPE)
+
+# Configure the process request
+request = documentai.ProcessRequest(name=RESOURCE_NAME, raw_document=raw_document)
+
+# Use the Document AI client to process the sample form
+result = docai_client.process_document(request=request)
+
+document_object = result.document
+print("Document processing complete.")
+with open("output.txt", "w") as file:
+    file.write(document_object.text)
+print(f"Text: {document_object.text}")
