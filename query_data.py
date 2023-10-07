@@ -7,8 +7,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 
-embeddings_model = OpenAIEmbeddings(openai_api_key=api_key)
-doc_search = Chroma.from_documents(texts, embeddings_model)
+
 # from dotenv import load_dotenv
 
 # load_dotenv()
@@ -18,6 +17,10 @@ data = loader.load()
 print(f'You have {len(data)} documents in your data')
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=2000, chunk_overlap=50)
 texts = text_splitter.split_documents(data)
+
+embeddings_model = OpenAIEmbeddings(openai_api_key=api_key)
+doc_search = Chroma.from_documents(texts, embeddings_model)
+
 print(f'You now have {len(texts)} texts in your data')
 
 llm = OpenAI(temperature=5, openai_api_key=api_key)

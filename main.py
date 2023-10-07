@@ -7,10 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set your API key here
-# API_KEY = os.getenv("OPENAI_API_KEY")
+API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Setting the API key
-openai.api_key = "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"
 
 embeddings = []  # List to store embeddings
 paragraphs = []  # List to store corresponding paragraphs
