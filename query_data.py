@@ -9,7 +9,7 @@ from langchain.chains.question_answering import load_qa_chain
 from dotenv import load_dotenv
 
 load_dotenv()
-loader = UnstructuredPDFLoader('documents/AFA10.pdf')
+loader = UnstructuredPDFLoader('AFA10.pdf')
 api_key = os.getenv("OPENAI_API_KEY")
 
 data = loader.load()
