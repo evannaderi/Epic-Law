@@ -6,6 +6,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from dotenv import load_dotenv
+from langchain.document_loaders import TextLoader
 
 # Load environment variables
 load_dotenv()
@@ -13,6 +14,12 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 def load_and_convert_pdf(pdf_path):
     loader = UnstructuredPDFLoader(pdf_path)
+    data = loader.load()
+    print(f'You have {len(data)} documents in your data')
+    return data
+
+def load_and_convert_txt(txt_path):
+    loader = TextLoader(txt_path)
     data = loader.load()
     print(f'You have {len(data)} documents in your data')
     return data

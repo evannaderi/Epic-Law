@@ -4,7 +4,7 @@ import io
 
 def extract_text_from_image_pdf(pdf_path, output_path):
     creds = service_account.Credentials.from_service_account_file(
-        'intrepid-alloy-401317-c6027ebba5eb.json')
+        'intrepid-alloy-401317-296673f12b15.json')
     client = vision_v1.ImageAnnotatorClient(credentials=creds)
 
     with io.open(pdf_path, 'rb') as pdf_file:
