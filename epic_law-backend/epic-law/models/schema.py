@@ -31,3 +31,6 @@ class CaseChatResponse(BaseModel):
     id: str
     case_id: str
     messages: List[Message]
+
+class QueryInput(BaseModel):
+    query: str

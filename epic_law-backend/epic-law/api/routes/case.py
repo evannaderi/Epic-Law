@@ -82,10 +82,10 @@ async def get_case_chat(case_id: str, db: Session = Depends(get_db)):
         raise HTTPException(status_code=Error.status_code, detail=Error.detail)
     
 
-@router.post("/chat/{chat_id}")
-async def post_chat_message(chat_id: str, chat: schema.ChatInput, db: Session = Depends(get_db)):
+@router.post("/chat/{case_id}")
+async def post_chat_message(case_id: str, chat: schema.ChatInput, db: Session = Depends(get_db)):
     try:
-        return case_svc.post_chat_message(chat_id, "user", chat, db)
+        return case_svc.post_chat_message(case_id, "user", chat, db)
     except HTTPException as Error:
         print(Error)
         raise HTTPException(status_code=Error.status_code, detail=Error.detail)
@@ -95,6 +95,15 @@ async def post_chat_message(chat_id: str, chat: schema.ChatInput, db: Session = 
 async def start_processing(case_id: str, db: Session = Depends(get_db)):
     try:
         return case_svc.start_processing(case_id, db)
+    except HTTPException as Error:
+        print(Error)
+        raise HTTPException(status_code=Error.status_code, detail=Error.detail)
+    
+
+@router.get("/case/{case_id}/query")
+async def query_case_info(case_id: str, query: schema.QueryInput, db: Session = Depends(get_db)):
+    try:
+        return case_svc.query_case_info(query, case_id, db)
     except HTTPException as Error:
         print(Error)
         raise HTTPException(status_code=Error.status_code, detail=Error.detail)
