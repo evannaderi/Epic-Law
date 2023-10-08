@@ -27,8 +27,10 @@ async def create_case(case: schema.Case, db: Session = Depends(get_db)):
         return case_svc.create_case(case, db)
     except HTTPException as Error:
         print(Error)
-        raise HTTPException(status_code=Error.status_code, detail=Error.detail)
-    
+        raise HTTPException(status_code=Error.status_code, detail=Error.detail) 
+    except Exception as Error:
+        print(Error)
+        raise HTTPException(status_code=500, detail="Internal Server Error")   
 
 @router.get("/cases")
 async def get_cases(db: Session = Depends(get_db)):
