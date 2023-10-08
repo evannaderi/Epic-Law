@@ -12,8 +12,15 @@ import {
   Box,
   Grid,
 } from "@chakra-ui/react";
+import FileDropzone from "./FileDropzone";
+import UploadPage from "./UploadPage";
 
 const CustomInput = ({ value, setValue, placeholder, name, big }) => {
+  const handleChange = (event) => {
+    const newValue = event.target.value;
+    setValue(newValue);
+  };
+
   return (
     <Flex length="80%" alignItems={big ? "flex-start" : "center"} margin="12px">
       <Flex width="350px" padding="0 0 0 30px">
@@ -23,7 +30,7 @@ const CustomInput = ({ value, setValue, placeholder, name, big }) => {
       </Flex>
       <Input
         placeholder={placeholder}
-        onChange={(newVal) => setValue(newVal)}
+        onChange={handleChange}
         value={value}
         variant={"filled"}
         background={"#d9d9d9"}
@@ -89,33 +96,57 @@ const UploadNewCase = () => {
 };
 
 const UpdateCase = () => {
-  const [medicalRecs, setMedicalRecs] = useState(null);
-  const [policeReport, setPoliceReport] = useState(null);
-  const [insurancePolicy, setInsurancePolicy] = useState(null);
-  const [wageLost, setWageLost] = useState(null);
-  const [diary, setDiary] = useState(null);
-  const [witnessStatements, setWitnessStatements] = useState(null);
-  const [correspondence, setCorrespondence] = useState(null);
+  const [medicalRecs, setMedicalRecs] = useState([]);
+  const [policeReport, setPoliceReport] = useState([]);
+  const [insurancePolicy, setInsurancePolicy] = useState([]);
+  const [wageLost, setWageLost] = useState([]);
+  const [diary, setDiary] = useState([]);
+  const [witnessStatements, setWitnessStatements] = useState([]);
+  const [correspondence, setCorrespondence] = useState([]);
+  const [caseNumber, setCaseNumber] = useState("");
+
   const onSubmit = () => {
+    const allFiles = [
+      ...medicalRecs,
+      ...policeReport,
+      ...insurancePolicy,
+      ...wageLost,
+      ...diary,
+      ...witnessStatements,
+      ...correspondence,
+    ];
+
+    // You can now send the 'allFiles' array to your API
+    // Replace this with your API endpoint and logic
+
     console.log("updated");
   };
   return (
     <Flex flexDir={"column"} padding="32px">
+      <CustomInput
+        value={caseNumber}
+        setValue={setCaseNumber}
+        placeholder={"Case Number"}
+        name={"Case Number"}
+      />
       <CustomFile
         value={medicalRecs}
         setValue={setMedicalRecs}
+        FileDropzone={<UploadPage />}
         placeholder={"Medical Records"}
         name={"Medical Records"}
       />
       <CustomFile
         value={policeReport}
         setValue={setPoliceReport}
+        FileDropzone={<UploadPage />}
         placeholder={"Police Report"}
         name={"Police Report"}
       />
       <CustomFile
         value={insurancePolicy}
         setValue={setInsurancePolicy}
+        FileDropzone={<UploadPage />}
         placeholder={"Insurance Policy"}
         name={"Insurance Policy"}
         big
@@ -123,6 +154,7 @@ const UpdateCase = () => {
       <CustomFile
         value={wageLost}
         setValue={setWageLost}
+        FileDropzone={<UploadPage />}
         placeholder={"Wage Lost Information"}
         name={"Wage Lost Information"}
         big
@@ -130,6 +162,7 @@ const UpdateCase = () => {
       <CustomFile
         value={diary}
         setValue={setDiary}
+        FileDropzone={<UploadPage />}
         placeholder={"Personal Diary"}
         name={"Personal Diary"}
         big
@@ -137,6 +170,7 @@ const UpdateCase = () => {
       <CustomFile
         value={witnessStatements}
         setValue={setWitnessStatements}
+        FileDropzone={<UploadPage />}
         placeholder={"Witness Statements"}
         name={"Witness Statements"}
         big
@@ -144,6 +178,7 @@ const UpdateCase = () => {
       <CustomFile
         value={correspondence}
         setValue={setCorrespondence}
+        FileDropzone={<UploadPage />}
         placeholder={"Correspondence"}
         name={"Correspondence"}
         big
