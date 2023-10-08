@@ -20,9 +20,9 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 EMBEDDINGS = None
 
-credentials = service_account.Credentials.from_service_account_file('./cis-class-375520-5b4fc8d182f4.json')
-client = storage.Client(project='cis-class-375520', credentials=credentials)
-bucketName = "epic-law"
+credentials = service_account.Credentials.from_service_account_file('./intrepid-alloy-401317-038095ed3c75.json')
+client = storage.Client(project='intrepid-alloy-401317', credentials=credentials)
+bucketName = "pdf-reader-0001"
 
 def create_case(case: schema.Case, db: Session):
     case_val = entities.Case(**case.dict())
@@ -129,13 +129,13 @@ def send_prompt_and_get_response(query):
     print(res)
     return res
 
-def query_case_info(query: str, case_id: str, db: Session):
+def query_case_info(query: schema.QueryInput, case_id: str, db: Session):
     
-    currChat = post_chat_message(case_id, "user", query, db)
+    currChat = post_chat_message(case_id, "user", schema.ChatInput(id="", case_id="", userMessage=query.query), db)
 
     res = send_prompt_and_get_response(query)
 
-    currChat = post_chat_message(case_id, "system", res, db)
+    currChat = post_chat_message(case_id, "system", schema.ChatInput(id="", case_id="", userMessage=res), db)
 
     return currChat
 

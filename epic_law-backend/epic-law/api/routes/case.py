@@ -100,7 +100,7 @@ async def start_processing(case_id: str, db: Session = Depends(get_db)):
         raise HTTPException(status_code=Error.status_code, detail=Error.detail)
     
 
-@router.get("/case/{case_id}/query")
+@router.post("/case/{case_id}/query")
 async def query_case_info(case_id: str, query: schema.QueryInput, db: Session = Depends(get_db)):
     try:
         return case_svc.query_case_info(query, case_id, db)
