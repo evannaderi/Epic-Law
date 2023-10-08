@@ -8,7 +8,7 @@ from langchain.chains.question_answering import load_qa_chain
 
 
 from ..models import entities, schema
-from ..processors import image_parse, pdf_parser
+from ..processors import image_parse, pdf_parser, img_pdf_parser
 
 import uuid
 import os
@@ -92,8 +92,13 @@ def start_processing(case_id: str, db: Session):
             image_data = image_parse.load_and_convert_txt(file.directory + "/" + IMG_OUTPUT)
             data = data + image_data
         elif ".pdf" in file.fileName:
-            pdf_data = pdf_parser.load_and_convert_pdf(file.directory + "/" + file.fileName)
-            data = data + pdf_data
+            try:
+                pdf_data = pdf_parser.load_and_convert_pdf(file.directory + "/" + file.fileName)
+                data = data + pdf_data
+            except Exception as e:
+                img_pdf_parser.process_and_append_pdf(file.directory + "/" + file.fileName, file.directory + "/" + IMG_OUTPUT)
+                pdf_data = image_parse.load_and_convert_txt(file.directory + "/" + IMG_OUTPUT)
+                data = data + pdf_data
         elif ".docx" in file.fileName:
             doc_data = pdf_parser.load_and_convert_docx(file.directory + "/" + file.fileName)
             data = data + doc_data
