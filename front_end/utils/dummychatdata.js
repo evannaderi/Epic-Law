@@ -57,4 +57,37 @@ const chatData = {
 	},
 };
 
-export { chatData };
+const caseData = [
+	{
+		caseNumber: '123456',
+		clientName: 'John Doe',
+		tag: 'medical malpractice',
+	},
+	{
+		caseNumber: '123457',
+		clientName: 'Jane Doe',
+		tag: 'personal injury',
+	},
+	{
+		caseNumber: '123458',
+		clientName: 'Jacky Doe',
+		tag: 'domestic violence',
+	},
+	{
+		caseNumber: '123456',
+		clientName: 'John Doe',
+		tag: 'medical malpractice',
+	},
+	{
+		caseNumber: '123457',
+		clientName: 'Jane Doe',
+		tag: 'personal injury',
+	},
+	{
+		caseNumber: '123458',
+		clientName: 'Jacky Doe',
+		tag: 'domestic violence',
+	},
+];
+
+export { chatData, caseData };

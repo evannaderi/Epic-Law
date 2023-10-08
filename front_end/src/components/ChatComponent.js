@@ -9,18 +9,20 @@ import {
 	InputRightElement,
 	IconButton,
 	Textarea,
+	Heading,
 } from '@chakra-ui/react';
-import { chatData } from '../../utils/dummychatdata';
+import { chatData, caseData } from '../../utils/dummychatdata';
 import { ArrowRightIcon } from '@chakra-ui/icons';
+import CaseCards from './CaseCards';
 
 const ChatHeader = ({ caseNumber, clientName }) => {
 	return (
 		<Box
-			height="120px"
+			height="100px"
 			borderBottom="1px solid gray"
 			padding="16px"
 			borderTopRadius={'30px'}
-			backgroundColor={'#FAFBFF'}
+			backgroundColor={'#c8c9cc'}
 		>
 			<Text fontWeight={'600'} fontSize={'20px'}>
 				Case {caseNumber}
@@ -97,11 +99,29 @@ const ChatInput = () => {
 	);
 };
 
-const ChatSidebar = () => {
-	return <Flex>Some content here</Flex>;
+const ChatSidebar = ({ activeChatID }) => {
+	const cases = [...caseData];
+	return (
+		<Flex justifyContent={'center'} flexDir={'column'}>
+			<Flex margin="128px 0" justifyContent={'center'}>
+				<Heading color="white">EPIC LAW AI WHAT</Heading>
+			</Flex>
+			{cases.map((lawcase, i) => {
+				return (
+					<CaseCards
+						caseNumber={lawcase.caseNumber}
+						clientName={lawcase.clientName}
+						tag={lawcase.tag}
+						key={`case-${i}`}
+						active={activeChatID == lawcase.caseNumber}
+					/>
+				);
+			})}
+		</Flex>
+	);
 };
 
-const ChatComponent = () => {
+const ChatComponent = ({ chatID }) => {
 	const messages = [...chatData.conversation.messages];
 	return (
 		<Grid
@@ -110,7 +130,16 @@ const ChatComponent = () => {
 			height="100vh"
 			overflowX={'hidden'}
 		>
-			<ChatSidebar />
+			<Flex flexDirection={'column'} height="100vh">
+				<Box
+					overflowY="auto" // Make the Box scrollable
+					// height="calc(100% - 65px - 32px)" // Deduct the height of the input and its margin
+					// paddingBottom="97px" // Space for the input at the bottom
+					backgroundColor={'transparent'}
+				>
+					<ChatSidebar activeChatID={chatID} />
+				</Box>
+			</Flex>
 			<Flex
 				flexDirection={'column'}
 				position="relative"
@@ -135,6 +164,7 @@ const ChatComponent = () => {
 						);
 					})}
 				</Box>
+
 				<ChatInput />
 			</Flex>
 		</Grid>

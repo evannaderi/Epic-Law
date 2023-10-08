@@ -2,10 +2,10 @@
 
 import ChatComponent from '@/components/ChatComponent';
 import { Box } from '@chakra-ui/react';
-const ChatPage = () => {
+const ChatPage = ({ chatID }) => {
 	return (
 		<Box overflowY={'scroll'} maxHeight={'100vh'} overflowX={'hidden'}>
-			<ChatComponent />
+			<ChatComponent chatID={chatID} />
 		</Box>
 	);
 };
