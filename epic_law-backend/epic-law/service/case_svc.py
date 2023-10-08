@@ -117,6 +117,7 @@ def start_processing(case_id: str, db: Session):
             data = data + pdf_data
 
     EMBEDDINGS = pdf_parser.process_text_and_get_embeddings(data)
+    return EMBEDDINGS == None
 
 
 def send_prompt_and_get_response(query):
@@ -130,10 +131,10 @@ def send_prompt_and_get_response(query):
     return res
 
 def query_case_info(query: schema.QueryInput, case_id: str, db: Session):
-    
-    currChat = post_chat_message(case_id, "user", schema.ChatInput(id="", case_id="", userMessage=query.query), db)
 
-    res = send_prompt_and_get_response(query)
+    res = send_prompt_and_get_response(query.query)
+
+    currChat = post_chat_message(case_id, "user", schema.ChatInput(id="", case_id="", userMessage=query.query), db)
 
     currChat = post_chat_message(case_id, "system", schema.ChatInput(id="", case_id="", userMessage=res), db)
 

@@ -6,7 +6,7 @@ class Case(Base):
     __tablename__ = "cases"
 
     id = Column(String, primary_key=True, index=True)
-    case_number = Column(Integer, index=True)
+    case_number = Column(String, index=True)
     categories = Column(ARRAY(VARCHAR))
     title = Column(String, index=True)
     description = Column(String)
