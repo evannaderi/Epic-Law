@@ -19,10 +19,11 @@ const ChatHeader = ({ caseNumber, clientName }) => {
 	return (
 		<Box
 			height="100px"
-			borderBottom="1px solid gray"
+			// borderBottom="1px solid gray"
 			padding="16px"
 			borderTopRadius={'30px'}
-			backgroundColor={'#c8c9cc'}
+			backgroundColor={'#fafbff'}
+			boxShadow={'0px 4px 4px rgba(0, 0, 0, 0.25)'}
 		>
 			<Text fontWeight={'600'} fontSize={'20px'}>
 				Case {caseNumber}
@@ -36,8 +37,8 @@ const ChatBoxes = ({ role, content }) => {
 	return (
 		<Flex
 			alignItems={'center'}
-			backgroundColor={role == 'user' ? '#36454F' : '#FAFBFF'}
-			padding="32px 0"
+			backgroundColor={role == 'user' ? '#36454F' : '#e1e4f0'}
+			padding="40px 0"
 			justifyContent={'center'}
 		>
 			<Box width={'50%'}>
@@ -215,6 +216,7 @@ const ChatComponent = ({ chatID, noChat }) => {
 				// border={'2px solid red'}
 				// backgroundColor={'#FAFBFF'}
 				height="100vh"
+				paddingTop="24px"
 			>
 				{!noChat ? (
 					<>
@@ -223,7 +225,7 @@ const ChatComponent = ({ chatID, noChat }) => {
 							overflowY="auto" // Make the Box scrollable
 							height="calc(100% - 65px - 30px)" // Deduct the height of the input and its margin
 							paddingBottom="97px" // Space for the input at the bottom
-							backgroundColor={'transparent'}
+							backgroundColor={'#e1e4f0'}
 						>
 							{messages?.map((message, i) => {
 								return (

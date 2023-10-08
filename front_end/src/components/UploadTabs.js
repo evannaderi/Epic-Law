@@ -216,38 +216,7 @@ const UpdateCase = ({ setStep, caseID }) => {
 	const [witnessStatements, setWitnessStatements] = useState();
 	const [correspondence, setCorrespondence] = useState();
 	const router = useRouter();
-	// const onSubmit = async (event) => {
-	// 	event.preventDefault();
-	// 	// const formData = new FormData();
 
-	// 	formData.append('medical_records', medicalRecs);
-	// 	formData.append('police_report', policeReport);
-	// 	formData.append('insurance_policy', insurancePolicy);
-	// 	formData.append('wage_lost', wageLost);
-	// 	formData.append('diary', diary);
-	// 	formData.append('witness_statements', witnessStatements);
-	// 	formData.append('correspondence', correspondence);
-
-	// 	try {
-	// 		const response = await fetch(
-	// 			`http://localhost:8080/case/${caseID}/upload/`,
-	// 			{
-	// 				method: 'POST',
-	// 				body: formData,
-	// 			}
-	// 		);
-
-	// 		if (response.ok) {
-	// 			console.log('Files uploaded successfully');
-	// 		} else {
-	// 			console.error('File upload failed', response.statusText);
-	// 		}
-	// 		// console.log('Files uploaded successfully');
-	// 		// console.log(formData);
-	// 	} catch (error) {
-	// 		console.error('Error during file upload', error);
-	// 	}
-	// };
 	const handleBack = () => {
 		setStep(0);
 	};

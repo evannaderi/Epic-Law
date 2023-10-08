@@ -7,6 +7,7 @@ import {
 	Text,
 	Button,
 } from '@chakra-ui/react';
+import Image from 'next/image';
 
 const Navbar = () => {
 	return (
@@ -20,11 +21,14 @@ const Navbar = () => {
 			// borderBottom="1px solid #FAAFAB"
 		>
 			<Link href="/" passHref>
-				<ChakraLink>
+				{/* <ChakraLink>
 					<Text fontSize="lg" fontWeight="bold">
 						LegAI
 					</Text>
-				</ChakraLink>
+				</ChakraLink> */}
+				<Box>
+					<Image src={'/legailogo.png'} width={200} height={100} />{' '}
+				</Box>
 			</Link>
 			<Spacer />
 			<Flex align="center">

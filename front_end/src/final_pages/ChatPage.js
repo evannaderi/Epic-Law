@@ -2,7 +2,6 @@
 
 import ChatComponent from '@/components/ChatComponent';
 import { Flex } from '@chakra-ui/react';
-import Navbar from '@/components/Navbar';
 const ChatPage = ({ chatID, noChat }) => {
 	return (
 		<>

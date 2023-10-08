@@ -11,9 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={outfit.className}>
-				<Providers>{children}</Providers>
-			</body>
+			<Providers>
+				<body className={outfit.className}>{children}</body>{' '}
+			</Providers>
 		</html>
 	);
 }
