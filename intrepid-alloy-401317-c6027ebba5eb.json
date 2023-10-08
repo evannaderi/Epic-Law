@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "intrepid-alloy-401317",
+  "private_key_id": "c6027ebba5eb95ef45a6cf124fea76017f8966a7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDAsfMHKsXhbEib\nM4ZF9Y8+yUr0KSlqWc+oIdaxG22LTxMLhqYu3V+SFvURav/7Fn98OpUFBWFGar2b\n17uBFIra+B/70bUhLTPUbe1vYgyuSZquKH30rxcdFkenke6ky7/l0Eg9YmucoxDN\nkBjCOqf2kixRh7JripHSDHF4LT5AROr+DUjz2r5v5vvYzpgZ9TeggEBzi4gINcMg\nT4tUR9xtfNBwN+ZUsIgvvD+0+bPFEyhiicquD/TmeDfXaveAKVYWeuwoDD6xG9tI\n0AQUlSCXFWUfjT/PiSPmGdIOkhLxwSE6mWsD55X9C15lqVYZ/31SK55NdElEnZAw\nrI7fippfAgMBAAECggEAH7yvVFzdHpWhF77SvK8HGsY4jCJDafrE0uJP4/eqgSlS\n77ELqehYF02kq2u+IXLBKIrVhHAwZ1KpTAOqJEZn4EzBp84QURiK0tAQLSovAH2q\n9khBBo3X9rh2sMi+T3Indwho/YM6SiApYlH7YfIbO+czWXJKFqBKCBh4j9yTxi3J\n2E86g855Mh5HCoHreAKxoP9G+d6bM9D8UJhKn3p8I50GGY9TaKvnf1zQw37g7L8I\ntl6i5w57W61UfUTJ4XzQMeJswUQMfUT8KlVc+4AmintCS1aeCvEXN6xY8P+oeEH2\nAG/iWtHjEiMFb7HbaSsxrqDRlPGvu8rtT6uLNScJEQKBgQD+Xnv0DxuXUbVm3QI0\nssj1YaJSv/hep2bHc7WewMydrhfHLIu7/FwOBuqgyRzjeIfZTyEcWexd/MxETF16\nDU3Z1RF3Ae5ro3+dh0oWaFHbgNlUwAfs39JPJcZeR2p9a52KUPiskwi9iW94FzFx\nsh8jVR//I7igIsIAOUW6VxLWQwKBgQDB7jwe+/c+QGfp3xQDioHWe8AX4+t1Nvet\nm7NR2kYUuA/yYy6h+RlrC6O/1T7BIQxjlNLa4FIEbv3dkTBTmwRtoR5a1JsymdZE\nINQptBwi0x7fsSH3BSy/Y1GWd7BZJI68eIBHyti6qaJEEOqDbUT8W8I8me5mEsIQ\nc0dEFK0ftQKBgQDIw641rQ7r2dPBQkKRcWLnOY4ync3cd2fJmGwKxsU41sVxsJkB\nYGcPsynQiatBZkpim+/YPqkubW6ToWpOAN4nReIo+d9CGaOJo9Q351JkW0gteftH\nXEjTq07r7pYAM8X9+3aqTsqhPi46rKObxyiIbJF6gKkhyw0vvARq1HrLnQKBgQCK\nTKxhaE0U/vdcKLNsJw2a+Nuv7eGP0OhmzZ/fIqtRwUXWFPc/mZaP6VgYySmcr0XX\nil2oq8qx0LmIli8BoI5S5FDyc6ZOOrk8ErFbIE/kYe0ll3viXrVfs6OOi8Kef9yu\n+bx59mYDEFBg/DNSEM3erk1hzGDgOEZfVuae3aPs9QKBgQDNrihjSTFwh6YJoj4K\nH3M9VBsc3hK7oRUIRoodI/LaL0E4J9kygpmlWls8ZKUhcj6OLnP2VxKj/iPbUunS\nlYnWd06rTHoqIVRVPuh0K7eUlaEclwOyFGUB3VkWoTUI0S3JX7I46bee9Gpqwe5R\nAb1bYTk5nyQhh9/OeU2eC7IUZw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "document-ai-ocr-scanner@intrepid-alloy-401317.iam.gserviceaccount.com",
+  "client_id": "118401586563862531977",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/document-ai-ocr-scanner%40intrepid-alloy-401317.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

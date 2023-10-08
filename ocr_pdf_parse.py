@@ -1,42 +1,41 @@
 from google.api_core.client_options import ClientOptions
 from google.cloud import documentai
 
-
+# Global variables
 PROJECT_ID = "intrepid-alloy-401317"
 LOCATION = "us"  # Format is 'us' or 'eu'
 PROCESSOR_ID = "a448e307b426c48a"  # Create processor in Cloud Console
+MIME_TYPE = "application/pdf"  # MIME type for PDF files
 
-# The local file in your current working directory
-FILE_PATH = "documents/report.pdf"
-# Refer to https://cloud.google.com/document-ai/docs/file-types
-# for supported file types
-MIME_TYPE = "application/pdf"
-
-# Instantiates a client
+# Instantiate a client
 docai_client = documentai.DocumentProcessorServiceClient(
     client_options=ClientOptions(api_endpoint=f"{LOCATION}-documentai.googleapis.com")
 )
 
-# The full resource name of the processor, e.g.:
-# projects/project-id/locations/location/processor/processor-id
-# You must create new processors in the Cloud Console first
 RESOURCE_NAME = docai_client.processor_path(PROJECT_ID, LOCATION, PROCESSOR_ID)
 
-# Read the file into memory
-with open(FILE_PATH, "rb") as image:
-    image_content = image.read()
+def process_and_append_pdf(file_path, output_path):
+    # Read the file into memory
+    with open(file_path, "rb") as image:
+        image_content = image.read()
 
-# Load Binary Data into Document AI RawDocument Object
-raw_document = documentai.RawDocument(content=image_content, mime_type=MIME_TYPE)
+    # Load Binary Data into Document AI RawDocument Object
+    raw_document = documentai.RawDocument(content=image_content, mime_type=MIME_TYPE)
 
-# Configure the process request
-request = documentai.ProcessRequest(name=RESOURCE_NAME, raw_document=raw_document)
+    # Configure the process request
+    request = documentai.ProcessRequest(name=RESOURCE_NAME, raw_document=raw_document)
 
-# Use the Document AI client to process the sample form
-result = docai_client.process_document(request=request)
+    # Use the Document AI client to process the PDF
+    result = docai_client.process_document(request=request)
 
-document_object = result.document
-print("Document processing complete.")
-with open("output.txt", "w") as file:
-    file.write(document_object.text)
-print(f"Text: {document_object.text}")
+    document_object = result.document
+    print("Document processing complete.")
+
+    # Append the processed text to the output file
+    with open(output_path, "a") as file:
+        file.write(document_object.text)
+    print(f"Text appended to {output_path}")
+
+# Usage:
+process_and_append_pdf("documents/report.pdf", "output.txt")
+process_and_append_pdf("documents/report-copy.pdf", "output.txt")

@@ -1,5 +1,1404 @@
-HOW TO WRITE ALT
-TEXT AND IMAGE
-DESCRIPTIONS FOR
-THE VISUALLY
-IMPAIRED
+C LexisNexisⓇ
+PAGE COUNT: 5
+CLIENT :
+DIVISION :
+ADJUSTER:
+CLAIM :
+TRANSACTION # :
+DATE :
+COUNTY:
+STATE:
+8811
+DATE OF LOSS :
+STREET:
+CITY:
+0053C00000BSLLQ
+00002410
+PARTY 1:
+PARTY 2 :
+PARTY 3:
+CAR :
+NOTE :
+DRIVER LICENSE:
+ADDITIONAL INFO :
+1348431222
+05/03/2021
+INVESTIGATING AGENCY:
+REPORT NUMBER :
+REPORT TYPE :
+04/22/2021
+SW 65 AVE
+DADE
+FL
+TIME OF LOSS :
+WEST MIAMI PD
+85863976
+Auto Accident
+MAKE :
+TAG :
+YEAR:
+THANK YOU FOR YOUR ORDER!
+For Customer Support refer to the
+appropriate platform below:
+OrderPoint
+800-934-9698
+Orderpoint.support@lexisnexis.com
+Accurint for Insurance
+866-277-8407
+Accurint.support@lexisnexis.com
+Lexis.com
+Law Firm accounts
+800-543-6862
+Date of Crash
+22/Apr/2021 02:51 AM
+FLORIDA TRAFFIC CRASH REPORT
+LONG FORM X
+SHORT FORM
+CRASH IDENTIFIERS
+County Code City Code
+01
+93
+Time on Scene
+22/Apr/2021
+02:54 PM
+At Feet
+light Condition
+ROADWAY INFORMATION
+Crash Occured On Street, Road, Highway
+Or Miles
+1 Daylight
+First Harmful Event Type
+Time Cleared Scene Completed
+22/Apr/2021 04:00
+PM
+Yes
+Contributing Circumstances: Road
+1 None
+Trailer
+One:
+Make
+Year
+2020 ΤΟΥΤ
+Insurance Company
+1 Vehicle in Transport
+Model Style
+Road System Identifier
+5 Local
+CRASH INFORMATION (Check if Pictures Taken)
+Weather Condition
+1 Clear
+Contributing Circumstances: Environment
+1 None
+Work Zone Related Crash In Work Zone
+1 No
+VEHICLE (Check if Commercial)
+Vehicle Motor Vehicle Type
+1
+(Electronic Version)
+Time of Crash
+22/Apr/2021 02:51 AM
+License Number
+Trailer License Number
+Two:
+Vehicle
+Traveling: North
+CMV Configuration
+Comm GVWR/GCWR
+County of Crash
+Motor Carrier Name
+Name of Vehicle Owner (Check Box If Business)
+Comm/Non-Commercial
+SW 65TH AVE
+Direction
+Vehicle Maneuver Action
+1 Straight Ahead
+HSMV 90010 S
+Year Make
+2021 VOLK
+Insurance Company
+4 Not Applicable
+Haz. Mat. Release Haz Mat. Placard
+Hit and Run
+1 No
+State
+Reg. Expires
+State Reg. Expires
+Direction On Street, Road, Highway
+West
+4D
+First Harmful Event
+14
+1 Vehicle in Transport
+Model Style
+Motor Carrier Address
+MIAMI-DADE
+INFINITY AUTO INSURANCE COMPANY
+Vehicle Body Type
+VEHICLE (Check if Commercial)
+Vehicle Motor Vehicle Type
+2
+1 Passenger Car
+Date of Report
+22/Apr/2021 12:00 AM
+Color
+WHI
+Number
+4D
+UPDATE
+Hit and Run
+1 No
+Reason (if Investigation NOT Completed)
+Trafficway
+1 Two-Way, Not Divided
+Color
+Type Of Shoulder
+Veh License Number
+GWSQ92
+Extent of Damage
+Disabling
+From Intersection With Street, Road, Highway
+WHI
+Traffic Control Device For This Vehicle First (1) Sequence of Events
+1 No Controls
+2 Collision with Non-Fixed
+Object
+14 Motor Vehicle in Transport
+Trailer Type (trailer one)
+Cargo Body Type
+Permanent Reg. VIN
+Place or City of Crash
+Roadway Surface Condition School Bus Related
+1 Dry
+Permanent Reg. VIN
+Contributing Circumstances: Road
+Contributing Circumstances: Environment
+Type Of Work Zone
+Invest. Agency Report Number
+2101198
+STATE FARM AUTO INSURANCE
+Veh License Number
+First Harmful Event Location
+1 On Roadway
+Vehicle Defects (one)
+1 None
+Roadway Grade
+1 Level
+WEST MIAMI
+Current Address (Number and Street)
+SW 16 ST
+HIGHWAY SAFETY & MOTOR VEHICLES,
+TRAFFIC CRASH RECORDS
+NEIL KIRKMAN BUILDING, TALLAHASSEE, FL 32399-0537
+● At Street Address#
+1 Paved
+Class
+Extent of Damage
+Minor
+US DOT Number
+SW 16TH ST
+Trailer Type (trailer two)
+State
+FL
+Est. Damage
+Towed Due To Damage
+5000
+Yes
+Insurance Policy Number
+Reg. Expires
+State
+FL
+Est. Damage
+Roadway Alignment
+1 Straight
+Second (2) Sequence of Events
+Page 1 of 4
+City and State
+Vehicle Defects (two)
+Within City Limits
+Yes
+Reg. Expires
+Type Of Intersection
+3 4 5 6
+15 16 17
+14 13 12 11 10
+HSMV Crash Report Number
+85863976
+Insurance Policy Number
+Workers In Work Zone
+Permanent Reg. VIN
+2 At Lattitude
+25.75596
+1 No
+Within Interchange First Harmful Event Relation to Junction
+18 Through Roadway
+No
+Contributing Circumstances: Road
+Contributing Circumstances: Environment
+Area of Initial Impact
+Year
+8
+Year
+9
+109901108885001
+City and State
+MIAMI FL
+Make
+Time Reported
+22/Apr/2021
+02:51 PM
+2 Four-Way Intersection
+Vehicle Removed By
+WHITE
+Manner Of Collision
+18. Undercarriage
+19. Overturn
+20. Windshield
+21. Trailer
+Most Harmful Event
+2 Collision with Non-Fixed
+Object
+Third (3) Sequence of Events
+Make
+At Est. Speed
+10
+Notified By
+Permanent Reg. VIN
+Law Enforcement
+and Longitude
+-80.301739
+Law Enforcement In Work Zone
+✪ Or From Milepost #
+225
+2 Front to Front
+2T3K1RFV6LW059180
+Towed Due To Damage Vehicle Removed By
+WHITE
+No
+Time Dispatched
+22/Apr/2021
+02:51 PM
+Zip Code
+3 4 5 6
+Length
+Length
+1 15 16 17
+14 13 12 11 10
+Rotation
+Owner Request
+Posted Speed
+25
+Most Damaged Area
+8
+9
+Zip Code
+33165
+Axles
+Axles
+Total Lanes
+2
+Emergency Vehicle Use Speciual Function of MV
+1 No
+1 No Special Function
+Most Harmful Event Detail
+14 Motor Vehicle in Transport
+Fourth (4) Sequence of Events
+18. Undercarriage
+19. Overturn
+20. Windshield
+21. Trailer
+Phone Number
+Rotation
+Date of Crash
+22/Apr/2021 02:51 AM
+Name of Vehicle Owner (Check Box If Business)
+Trailer License Number
+One:
+Trailer
+Two:
+License Number
+Vehicle
+Traveling: West
+CMV Configuration
+Comm GVWR/GCWR
+Motor Carrier Name
+Direction On Street, Road, Highway
+4 Not Applicable
+Haz. Mat. Release Haz Mat. Placard
+Comm/Non-Commercial
+Vehicle Maneuver Action
+1 Straight Ahead
+PERSON RECORD
+Person# Description
+1
+Address
+Driver License Number
+Address
+Restraint System
+3 Shoulder and Lap Belt
+Used
+Motor Carrier Address
+1 Driver
+PERSON RECORD
+Person# Description
+3
+State
+Reg. Expires
+State Reg. Expires
+PERSON RECORD
+Person# Description
+2
+Address
+Restraint System
+Date of Report
+Vehicle Body Type
+Trafficway
+3 Passenger
+Driver License Number
+Source of Transport to Medical Facility
+1 Not Transported
+Traffic Control Device For This Vehicle First (1) Sequence of Events
+1 No Controls
+2 Collision with Non-Fixed
+Object
+14 Motor Vehicle in Transport
+Drivers Actions at Time of Crash (first)
+1 No Contributing Action
+Drivers Actions at Time of Crash (third)
+1 No Contributing Action
+Suspected Alcohol Use Alcohol Tested
+1 No
+1 Driver
+1 Passenger Car
+1 Two-Way, Not Divided
+State
+Air Bag Deployed
+Source of Transport to Medical Facility
+1 Not Transported
+Number
+Vehicle #
+1
+City
+1 Not Applicable
+22/Apr/2021 02:51 AM
+Restraint System
+Air Bag Deployed
+3 Shoulder and Lap Belt 3 Deployed-Front
+Used
+FL
+State
+Vehicle #
+1
+Air Bag Deployed
+Drivers Actions at Time of Crash (first)
+1 No Contributing Action
+Drivers Actions at Time of Crash (third)
+Trailer Type (trailer one)
+Permanent Reg. VIN
+Permanent Reg. VIN
+Cargo Body Type
+FL
+Roadway Grade
+1 Level
+Name
+Vehicle Defects (one)
+1 None
+Alcohol Test Type
+Expires
+Current Address (Number and Street)
+Helmet Use
+EMS Agency Name or ID
+Vehicle # Name
+2
+City
+MIAMI
+Name
+Helmet Use
+EMS Agency Name or ID
+EUSTIS
+Expires
+Helmet Use
+Invest. Agency Report Number
+2101198
+SW 16 ST
+US DOT Number
+Class
+Trailer Type (trailer two)
+City
+Drivers Actions at Time of Crash (second)
+1 No Contributing Action
+Drivers Actions at Time of Crash (fourth)
+13 Ran Stop Sign
+Alcohol Test Result BAC
+Roadway Alignment
+1 Straight
+Second (2) Sequence of Events
+DL Type
+State
+Eye Protection
+5 E/Operator
+DL Type
+Eye Protection
+City and State
+Vehicle Defects (two)
+EMS Run Number
+State
+Eye Protection
+5 E/Operator
+EMS Run Number
+Page 2 of 4
+34 5 6
+14 13 12 11 10
+FL
+Req. End.
+3 No Req
+Endorsement
+Seating Location Seat
+1 Left
+Drivers Actions at Time of Crash (second)
+Drivers Actions at Time of Crash (fourth)
+MIAMI
+15 16 17 8
+Area of Initial Impact
+Date of Birth
+Seating Location Seat
+3
+HSMV Crash Report Number
+85863976
+Year
+Date of Birth
+Year
+FL
+Req. End.
+3 No Req
+Endorsement
+Seating Location Seat
+3 Right
+Most Harmful Event
+2 Collision with Non-Fixed
+Object
+Third (3) Sequence of Events
+Date of Birth
+City and State
+EUSTIS FL
+Make
+Suspected Drug Use Drug Tested
+1 No
+At Est. Speed
+25
+Make
+18. Undercarriage
+19. Overturn
+20. Windshield
+21. Trailer
+Sex
+2 Female
+Injury Severity
+Zip Code
+1 None
+1 15)
+Sex
+2 Female
+14 13
+Zip Code
+Seating Location Row
+1 Front
+Injury Severity
+1 None
+Length
+Length
+Sex
+2 Female
+Zip Code
+Posted Speed
+25
+Most Damaged Area
+Emergency Vehicle Use Speciual Function of MV
+1 No
+1 No Special Function
+Driver Distracted By
+1 Not Distracted
+Drivers Condition at Time of Crash
+1 Apparently Normal
+Drug Test Type
+16 17
+Seating Location Row
+1
+5 6
+Phone Number
+State
+11 10
+Medical Facility Transported To
+ΝΑ
+Seating Location Row
+1 Front
+Most Harmful Event Detail
+14 Motor Vehicle in Transport
+Injury Severity
+1 None
+Fourth (4) Sequence of Events
+33165
+Ejection
+8
+9
+FL
+Medical Facility Transported To
+ΝΑ
+Zip Code
+32726
+Axles
+Axles
+Phone Number
+Total Lanes
+2
+Seating Location Other
+Driver Distracted By
+1 Not Distracted
+Drivers Condition at Time of Crash
+18. Undercarriage
+19. Overturn
+Phone Number
+20. Windshield
+21. Trailer
+Vision Obstruction
+1 Vision Not Obscured
+1 Not Ejected
+32726
+Ejection
+1 Apparently Normal
+Re-Exam
+No
+Zip Code
+33165
+Seating Location Other
+1
+Drug Test Result
+Ejection
+1 Not
+Ejected
+Re-Exam
+No
+1 Not Ejected
+Seating Location Other
+1 Not Applicable
+Vision Obstruction
+1 Vision Not Obscured
+Date of Crash
+22/Apr/2021 02:51 AM
+Suspected Alcohol Use Alcohol Tested
+1 No
+Source of Transport to Medical Facility
+1 Not Transported
+PERSON RECORD
+Person# Description
+4
+Address
+Restraint System
+3 Shoulder and Lap Belt
+Used
+3 Passenger
+VIOLATIONS
+Person#
+1
+Source of Transport to Medical Facility
+1 Not Transported
+Date of Report
+Name
+ID/Badge #
+152
+Air Bag Deployed
+22/Apr/2021 02:51 AM
+Alcohol Test Type Alcohol Test Result
+EMS Agency Name or ID
+Vehicle #
+2
+1 Not Applicable
+Name
+Helmet Use
+EMS Agency Name or ID
+City
+Invest. Agency Report Number
+2101198
+BAC Suspected Drug Use Drug Tested
+1 No
+EMS Run Number
+PATROL C.LOPEZ
+Eye Protection
+Florida Statute Number Charge
+316.074(1)
+APOPKA
+EMS Run Number
+Seating Location Seat
+3
+NON VEHICLE PROPERTY DAMAGE
+Vehicle# Person# Property Damage - Other Than Vehicle Est. Amount Business Owner's Name
+1
+STOP SIGN
+1000
+Yes
+FL DEPT. OF
+TRANSPORTATION
+Date of Birth
+Page 3 of 4
+HSMV Crash Report Number
+85863976
+Drug Test Type
+Medical Facility Transported To
+ΝΑ
+Sex
+2 Female
+Injury Severity
+1 None
+State
+Seating Location Row
+1
+FAIL TO OBEY TRAFFIC CONTROL SIGNAL (FAILED TO
+STOP AT TRAFF
+FL
+Medical Facility Transported To
+ΝΑ
+Drug Test Result
+Zip Code
+32703
+Seating Location Other
+1
+Department
+WEST MIAMI POLICE DEPARTMENT
+Citation
+Address
+City & State
+605 SUWANNEE ST, MS 52 TALLAHASSEE FL
+Ejection
+1 Not
+Ejected
+NARRATIVE
+V-2 WAS HEADING WEST BOUND FROM 64 AVE AND SW 16 ST. V-1 HAD COME TO A STOP ON 65 AVE SW 16 ST FACING NORTH BOUND. V-1 DID NOT ALLOW V-2 THE
+RIGHT OF WAY AND CAUSED A COLLISION IN THE PROCESS. V-1 HAD DAMAGE TO THE RIGHT-SIDE TIRE WHICH WAS DENTED IN COMPLETELY NOT ALLOWING
+THE VEHICLE TO MOVE. V-1 ALSO HAD THE FRONT RIGHT AND REAR DOOR DAMAGED DUE TO THE ACCIDENT. V-2 HAD DAMAGE TO THE FRONT BUMPER & GRILL.
+V-2 ALSO HAD THE FRONT GLASS DAMAGED DUE TO IMPACT. ADDITIONALLY, V-1 ALSO RAN OVER A STOP SIGN ON THE SOUTH EAST CORNER OF 65 AVE SW 16
+ST.
+ENGINE 40 RESPONDED TO THE SCENE UNDER LT.DIAZ ALARM #90250. ALL INVOLVED PARTIES WERE ATTENDED TO AND CLEARED ON SCENE.
+REPORTING OFFICER
+Rank and Name
+ACIGHSE
+Zip Code
+32399
+Type of Department
+PD
+Date of Crash
+22/Apr/2021 02:51 AM
+STOP V-2
+POINT OF IMPACT
+SW 65 AVE
+Date of Report
+V-1
+22/Apr/2021 02:51 AM
+16 ST
+STOP
+Invest. Agency Report Number
+2101198
+NOT TO SCALE
+Page 4 of 4
+HSMV Crash Report Number
+85863976
+C LexisNexisⓇ
+PAGE COUNT: 5
+CLIENT :
+DIVISION :
+ADJUSTER:
+CLAIM :
+TRANSACTION # :
+DATE :
+COUNTY:
+STATE:
+8811
+DATE OF LOSS :
+STREET:
+CITY:
+0053C00000BSLLQ
+00002410
+PARTY 1:
+PARTY 2 :
+PARTY 3:
+CAR :
+NOTE :
+DRIVER LICENSE:
+ADDITIONAL INFO :
+1348431222
+05/03/2021
+INVESTIGATING AGENCY:
+REPORT NUMBER :
+REPORT TYPE :
+04/22/2021
+SW 65 AVE
+DADE
+FL
+TIME OF LOSS :
+WEST MIAMI PD
+85863976
+Auto Accident
+MAKE :
+TAG :
+YEAR:
+THANK YOU FOR YOUR ORDER!
+For Customer Support refer to the
+appropriate platform below:
+OrderPoint
+800-934-9698
+Orderpoint.support@lexisnexis.com
+Accurint for Insurance
+866-277-8407
+Accurint.support@lexisnexis.com
+Lexis.com
+Law Firm accounts
+800-543-6862
+Date of Crash
+22/Apr/2021 02:51 AM
+FLORIDA TRAFFIC CRASH REPORT
+LONG FORM X
+SHORT FORM
+CRASH IDENTIFIERS
+County Code City Code
+01
+93
+Time on Scene
+22/Apr/2021
+02:54 PM
+At Feet
+light Condition
+ROADWAY INFORMATION
+Crash Occured On Street, Road, Highway
+Or Miles
+1 Daylight
+First Harmful Event Type
+Time Cleared Scene Completed
+22/Apr/2021 04:00
+PM
+Yes
+Contributing Circumstances: Road
+1 None
+Trailer
+One:
+Make
+Year
+2020 ΤΟΥΤ
+Insurance Company
+1 Vehicle in Transport
+Model Style
+Road System Identifier
+5 Local
+CRASH INFORMATION (Check if Pictures Taken)
+Weather Condition
+1 Clear
+Contributing Circumstances: Environment
+1 None
+Work Zone Related Crash In Work Zone
+1 No
+VEHICLE (Check if Commercial)
+Vehicle Motor Vehicle Type
+1
+(Electronic Version)
+Time of Crash
+22/Apr/2021 02:51 AM
+License Number
+Trailer License Number
+Two:
+Vehicle
+Traveling: North
+CMV Configuration
+Comm GVWR/GCWR
+County of Crash
+Motor Carrier Name
+Name of Vehicle Owner (Check Box If Business)
+Comm/Non-Commercial
+SW 65TH AVE
+Direction
+Vehicle Maneuver Action
+1 Straight Ahead
+HSMV 90010 S
+Year Make
+2021 VOLK
+Insurance Company
+4 Not Applicable
+Haz. Mat. Release Haz Mat. Placard
+Hit and Run
+1 No
+State
+Reg. Expires
+State Reg. Expires
+Direction On Street, Road, Highway
+West
+4D
+First Harmful Event
+14
+1 Vehicle in Transport
+Model Style
+Motor Carrier Address
+MIAMI-DADE
+INFINITY AUTO INSURANCE COMPANY
+Vehicle Body Type
+VEHICLE (Check if Commercial)
+Vehicle Motor Vehicle Type
+2
+1 Passenger Car
+Date of Report
+22/Apr/2021 12:00 AM
+Color
+WHI
+Number
+4D
+UPDATE
+Hit and Run
+1 No
+Reason (if Investigation NOT Completed)
+Trafficway
+1 Two-Way, Not Divided
+Color
+Type Of Shoulder
+Veh License Number
+GWSQ92
+Extent of Damage
+Disabling
+From Intersection With Street, Road, Highway
+WHI
+Traffic Control Device For This Vehicle First (1) Sequence of Events
+1 No Controls
+2 Collision with Non-Fixed
+Object
+14 Motor Vehicle in Transport
+Trailer Type (trailer one)
+Cargo Body Type
+Permanent Reg. VIN
+Place or City of Crash
+Roadway Surface Condition School Bus Related
+1 Dry
+Permanent Reg. VIN
+Contributing Circumstances: Road
+Contributing Circumstances: Environment
+Type Of Work Zone
+Invest. Agency Report Number
+2101198
+STATE FARM AUTO INSURANCE
+Veh License Number
+First Harmful Event Location
+1 On Roadway
+Vehicle Defects (one)
+1 None
+Roadway Grade
+1 Level
+WEST MIAMI
+Current Address (Number and Street)
+SW 16 ST
+HIGHWAY SAFETY & MOTOR VEHICLES,
+TRAFFIC CRASH RECORDS
+NEIL KIRKMAN BUILDING, TALLAHASSEE, FL 32399-0537
+● At Street Address#
+1 Paved
+Class
+Extent of Damage
+Minor
+US DOT Number
+SW 16TH ST
+Trailer Type (trailer two)
+State
+FL
+Est. Damage
+Towed Due To Damage
+5000
+Yes
+Insurance Policy Number
+Reg. Expires
+State
+FL
+Est. Damage
+Roadway Alignment
+1 Straight
+Second (2) Sequence of Events
+Page 1 of 4
+City and State
+Vehicle Defects (two)
+Within City Limits
+Yes
+Reg. Expires
+Type Of Intersection
+3 4 5 6
+15 16 17
+14 13 12 11 10
+HSMV Crash Report Number
+85863976
+Insurance Policy Number
+Workers In Work Zone
+Permanent Reg. VIN
+2 At Lattitude
+25.75596
+1 No
+Within Interchange First Harmful Event Relation to Junction
+18 Through Roadway
+No
+Contributing Circumstances: Road
+Contributing Circumstances: Environment
+Area of Initial Impact
+Year
+8
+Year
+9
+109901108885001
+City and State
+MIAMI FL
+Make
+Time Reported
+22/Apr/2021
+02:51 PM
+2 Four-Way Intersection
+Vehicle Removed By
+WHITE
+Manner Of Collision
+18. Undercarriage
+19. Overturn
+20. Windshield
+21. Trailer
+Most Harmful Event
+2 Collision with Non-Fixed
+Object
+Third (3) Sequence of Events
+Make
+At Est. Speed
+10
+Notified By
+Permanent Reg. VIN
+Law Enforcement
+and Longitude
+-80.301739
+Law Enforcement In Work Zone
+✪ Or From Milepost #
+225
+2 Front to Front
+2T3K1RFV6LW059180
+Towed Due To Damage Vehicle Removed By
+WHITE
+No
+Time Dispatched
+22/Apr/2021
+02:51 PM
+Zip Code
+3 4 5 6
+Length
+Length
+1 15 16 17
+14 13 12 11 10
+Rotation
+Owner Request
+Posted Speed
+25
+Most Damaged Area
+8
+9
+Zip Code
+33165
+Axles
+Axles
+Total Lanes
+2
+Emergency Vehicle Use Speciual Function of MV
+1 No
+1 No Special Function
+Most Harmful Event Detail
+14 Motor Vehicle in Transport
+Fourth (4) Sequence of Events
+18. Undercarriage
+19. Overturn
+20. Windshield
+21. Trailer
+Phone Number
+Rotation
+Date of Crash
+22/Apr/2021 02:51 AM
+Name of Vehicle Owner (Check Box If Business)
+Trailer License Number
+One:
+Trailer
+Two:
+License Number
+Vehicle
+Traveling: West
+CMV Configuration
+Comm GVWR/GCWR
+Motor Carrier Name
+Direction On Street, Road, Highway
+4 Not Applicable
+Haz. Mat. Release Haz Mat. Placard
+Comm/Non-Commercial
+Vehicle Maneuver Action
+1 Straight Ahead
+PERSON RECORD
+Person# Description
+1
+Address
+Driver License Number
+Address
+Restraint System
+3 Shoulder and Lap Belt
+Used
+Motor Carrier Address
+1 Driver
+PERSON RECORD
+Person# Description
+3
+State
+Reg. Expires
+State Reg. Expires
+PERSON RECORD
+Person# Description
+2
+Address
+Restraint System
+Date of Report
+Vehicle Body Type
+Trafficway
+3 Passenger
+Driver License Number
+Source of Transport to Medical Facility
+1 Not Transported
+Traffic Control Device For This Vehicle First (1) Sequence of Events
+1 No Controls
+2 Collision with Non-Fixed
+Object
+14 Motor Vehicle in Transport
+Drivers Actions at Time of Crash (first)
+1 No Contributing Action
+Drivers Actions at Time of Crash (third)
+1 No Contributing Action
+Suspected Alcohol Use Alcohol Tested
+1 No
+1 Driver
+1 Passenger Car
+1 Two-Way, Not Divided
+State
+Air Bag Deployed
+Source of Transport to Medical Facility
+1 Not Transported
+Number
+Vehicle #
+1
+City
+1 Not Applicable
+22/Apr/2021 02:51 AM
+Restraint System
+Air Bag Deployed
+3 Shoulder and Lap Belt 3 Deployed-Front
+Used
+FL
+State
+Vehicle #
+1
+Air Bag Deployed
+Drivers Actions at Time of Crash (first)
+1 No Contributing Action
+Drivers Actions at Time of Crash (third)
+Trailer Type (trailer one)
+Permanent Reg. VIN
+Permanent Reg. VIN
+Cargo Body Type
+FL
+Roadway Grade
+1 Level
+Name
+Vehicle Defects (one)
+1 None
+Alcohol Test Type
+Expires
+Current Address (Number and Street)
+Helmet Use
+EMS Agency Name or ID
+Vehicle # Name
+2
+City
+MIAMI
+Name
+Helmet Use
+EMS Agency Name or ID
+EUSTIS
+Expires
+Helmet Use
+Invest. Agency Report Number
+2101198
+SW 16 ST
+US DOT Number
+Class
+Trailer Type (trailer two)
+City
+Drivers Actions at Time of Crash (second)
+1 No Contributing Action
+Drivers Actions at Time of Crash (fourth)
+13 Ran Stop Sign
+Alcohol Test Result BAC
+Roadway Alignment
+1 Straight
+Second (2) Sequence of Events
+DL Type
+State
+Eye Protection
+5 E/Operator
+DL Type
+Eye Protection
+City and State
+Vehicle Defects (two)
+EMS Run Number
+State
+Eye Protection
+5 E/Operator
+EMS Run Number
+Page 2 of 4
+34 5 6
+14 13 12 11 10
+FL
+Req. End.
+3 No Req
+Endorsement
+Seating Location Seat
+1 Left
+Drivers Actions at Time of Crash (second)
+Drivers Actions at Time of Crash (fourth)
+MIAMI
+15 16 17 8
+Area of Initial Impact
+Date of Birth
+Seating Location Seat
+3
+HSMV Crash Report Number
+85863976
+Year
+Date of Birth
+Year
+FL
+Req. End.
+3 No Req
+Endorsement
+Seating Location Seat
+3 Right
+Most Harmful Event
+2 Collision with Non-Fixed
+Object
+Third (3) Sequence of Events
+Date of Birth
+City and State
+EUSTIS FL
+Make
+Suspected Drug Use Drug Tested
+1 No
+At Est. Speed
+25
+Make
+18. Undercarriage
+19. Overturn
+20. Windshield
+21. Trailer
+Sex
+2 Female
+Injury Severity
+Zip Code
+1 None
+1 15)
+Sex
+2 Female
+14 13
+Zip Code
+Seating Location Row
+1 Front
+Injury Severity
+1 None
+Length
+Length
+Sex
+2 Female
+Zip Code
+Posted Speed
+25
+Most Damaged Area
+Emergency Vehicle Use Speciual Function of MV
+1 No
+1 No Special Function
+Driver Distracted By
+1 Not Distracted
+Drivers Condition at Time of Crash
+1 Apparently Normal
+Drug Test Type
+16 17
+Seating Location Row
+1
+5 6
+Phone Number
+State
+11 10
+Medical Facility Transported To
+ΝΑ
+Seating Location Row
+1 Front
+Most Harmful Event Detail
+14 Motor Vehicle in Transport
+Injury Severity
+1 None
+Fourth (4) Sequence of Events
+33165
+Ejection
+8
+9
+FL
+Medical Facility Transported To
+ΝΑ
+Zip Code
+32726
+Axles
+Axles
+Phone Number
+Total Lanes
+2
+Seating Location Other
+Driver Distracted By
+1 Not Distracted
+Drivers Condition at Time of Crash
+18. Undercarriage
+19. Overturn
+Phone Number
+20. Windshield
+21. Trailer
+Vision Obstruction
+1 Vision Not Obscured
+1 Not Ejected
+32726
+Ejection
+1 Apparently Normal
+Re-Exam
+No
+Zip Code
+33165
+Seating Location Other
+1
+Drug Test Result
+Ejection
+1 Not
+Ejected
+Re-Exam
+No
+1 Not Ejected
+Seating Location Other
+1 Not Applicable
+Vision Obstruction
+1 Vision Not Obscured
+Date of Crash
+22/Apr/2021 02:51 AM
+Suspected Alcohol Use Alcohol Tested
+1 No
+Source of Transport to Medical Facility
+1 Not Transported
+PERSON RECORD
+Person# Description
+4
+Address
+Restraint System
+3 Shoulder and Lap Belt
+Used
+3 Passenger
+VIOLATIONS
+Person#
+1
+Source of Transport to Medical Facility
+1 Not Transported
+Date of Report
+Name
+ID/Badge #
+152
+Air Bag Deployed
+22/Apr/2021 02:51 AM
+Alcohol Test Type Alcohol Test Result
+EMS Agency Name or ID
+Vehicle #
+2
+1 Not Applicable
+Name
+Helmet Use
+EMS Agency Name or ID
+City
+Invest. Agency Report Number
+2101198
+BAC Suspected Drug Use Drug Tested
+1 No
+EMS Run Number
+PATROL C.LOPEZ
+Eye Protection
+Florida Statute Number Charge
+316.074(1)
+APOPKA
+EMS Run Number
+Seating Location Seat
+3
+NON VEHICLE PROPERTY DAMAGE
+Vehicle# Person# Property Damage - Other Than Vehicle Est. Amount Business Owner's Name
+1
+STOP SIGN
+1000
+Yes
+FL DEPT. OF
+TRANSPORTATION
+Date of Birth
+Page 3 of 4
+HSMV Crash Report Number
+85863976
+Drug Test Type
+Medical Facility Transported To
+ΝΑ
+Sex
+2 Female
+Injury Severity
+1 None
+State
+Seating Location Row
+1
+FAIL TO OBEY TRAFFIC CONTROL SIGNAL (FAILED TO
+STOP AT TRAFF
+FL
+Medical Facility Transported To
+ΝΑ
+Drug Test Result
+Zip Code
+32703
+Seating Location Other
+1
+Department
+WEST MIAMI POLICE DEPARTMENT
+Citation
+Address
+City & State
+605 SUWANNEE ST, MS 52 TALLAHASSEE FL
+Ejection
+1 Not
+Ejected
+NARRATIVE
+V-2 WAS HEADING WEST BOUND FROM 64 AVE AND SW 16 ST. V-1 HAD COME TO A STOP ON 65 AVE SW 16 ST FACING NORTH BOUND. V-1 DID NOT ALLOW V-2 THE
+RIGHT OF WAY AND CAUSED A COLLISION IN THE PROCESS. V-1 HAD DAMAGE TO THE RIGHT-SIDE TIRE WHICH WAS DENTED IN COMPLETELY NOT ALLOWING
+THE VEHICLE TO MOVE. V-1 ALSO HAD THE FRONT RIGHT AND REAR DOOR DAMAGED DUE TO THE ACCIDENT. V-2 HAD DAMAGE TO THE FRONT BUMPER & GRILL.
+V-2 ALSO HAD THE FRONT GLASS DAMAGED DUE TO IMPACT. ADDITIONALLY, V-1 ALSO RAN OVER A STOP SIGN ON THE SOUTH EAST CORNER OF 65 AVE SW 16
+ST.
+ENGINE 40 RESPONDED TO THE SCENE UNDER LT.DIAZ ALARM #90250. ALL INVOLVED PARTIES WERE ATTENDED TO AND CLEARED ON SCENE.
+REPORTING OFFICER
+Rank and Name
+ACIGHSE
+Zip Code
+32399
+Type of Department
+PD
+Date of Crash
+22/Apr/2021 02:51 AM
+STOP V-2
+POINT OF IMPACT
+SW 65 AVE
+Date of Report
+V-1
+22/Apr/2021 02:51 AM
+16 ST
+STOP
+Invest. Agency Report Number
+2101198
+NOT TO SCALE
+Page 4 of 4
+HSMV Crash Report Number
+85863976
