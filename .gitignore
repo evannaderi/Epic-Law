@@ -2,3 +2,17 @@
 intrepid-alloy-401317-c6027ebba5eb.json
 .env
 /front_end/node_modules
+
+epic_law-backend/cis-class-375520-5b4fc8d182f4.json
+.DS_Store
+epic_law-backend/uploads/
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv
+env/
+venv/
+
+
