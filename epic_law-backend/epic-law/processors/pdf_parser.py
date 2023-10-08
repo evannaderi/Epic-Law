@@ -1,4 +1,4 @@
-from langchain.document_loaders import UnstructuredPDFLoader, OnlinePDFLoader, PyPDFLoader
+from langchain.document_loaders import UnstructuredPDFLoader, OnlinePDFLoader, PyPDFLoader, Docx2txtLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 from langchain.vectorstores import Chroma, Pinecone
@@ -13,6 +13,12 @@ api_key = os.getenv("OPENAI_API_KEY")
 
 def load_and_convert_pdf(pdf_path):
     loader = UnstructuredPDFLoader(pdf_path)
+    data = loader.load()
+    print(f'You have {len(data)} documents in your data')
+    return data
+
+def load_and_convert_docx(txt_path):
+    loader = Docx2txtLoader(txt_path)
     data = loader.load()
     print(f'You have {len(data)} documents in your data')
     return data

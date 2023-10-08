@@ -34,7 +34,7 @@ def create_case(case: schema.Case, db: Session):
     db.commit()
     db.refresh(case_val)
 
-    chat = entities.CaseChat(id=getId(), case_id=case_val.id, systemMessages=["Welcome to chat"], userMessages=[])
+    chat = entities.CaseChat(id=getId(), case_id=case_val.id, systemMessages=["Welcome to LegAl. Your case analysis assistant."], userMessages=[])
     db.add(chat)
     db.commit()
     db.refresh(chat)
@@ -94,6 +94,9 @@ def start_processing(case_id: str, db: Session):
         elif ".pdf" in file.fileName:
             pdf_data = pdf_parser.load_and_convert_pdf(file.directory + "/" + file.fileName)
             data = data + pdf_data
+        elif ".docx" in file.fileName:
+            doc_data = pdf_parser.load_and_convert_docx(file.directory + "/" + file.fileName)
+            data = data + doc_data
 
     EMBEDDINGS = pdf_parser.process_text_and_get_embeddings(data)
     return EMBEDDINGS == None
