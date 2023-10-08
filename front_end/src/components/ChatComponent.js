@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
 	Text,
 	Box,
@@ -11,7 +11,7 @@ import {
 	Textarea,
 	Heading,
 } from '@chakra-ui/react';
-import { chatData, caseData } from '../../utils/dummychatdata';
+// import { chatData, caseData } from '../../utils/dummychatdata';
 import { ArrowRightIcon } from '@chakra-ui/icons';
 import CaseCards from './CaseCards';
 
@@ -33,9 +33,6 @@ const ChatHeader = ({ caseNumber, clientName }) => {
 };
 
 const ChatBoxes = ({ role, content }) => {
-	if (role == 'system') {
-		return null;
-	}
 	return (
 		<Flex
 			alignItems={'center'}
@@ -52,11 +49,46 @@ const ChatBoxes = ({ role, content }) => {
 	);
 };
 
-const ChatInput = () => {
-	const [input, setInput] = useState('');
+const ChatInput = ({
+	setUserMessage,
+	userMessage,
+	setMessages,
+	chatID,
+	inputDisabled,
+	setInputDisabled,
+	messages,
+}) => {
+	const handleChat = async (e) => {
+		e.preventDefault();
+		const msg = userMessage;
+
+		setMessages((prevMessages) => [
+			...prevMessages,
+			{ role: 'user', content: msg },
+		]);
+		setUserMessage('');
+		setInputDisabled(true);
+
+		const res = await fetch(`http://localhost:8080/case/${chatID}/query`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ query: userMessage }),
+		});
+		const data = await res.json();
+		console.log('from handle input', data);
+
+		setMessages((prevMessages) => [
+			...prevMessages,
+			data.messages[data.messages.length - 1],
+		]);
+		setInputDisabled(false);
+	};
+
 	return (
 		<Flex>
-			<form>
+			<form onSubmit={(e) => handleChat(e)}>
 				<InputGroup
 					width={'75%'}
 					position={'absolute'}
@@ -74,22 +106,25 @@ const ChatInput = () => {
 						width={'100%'}
 						height="65px"
 						maxHeight={'100px'}
-						value={input}
-						onChange={(e) => setInput(e.target.value)}
-						placeholder="Ask Epic AI"
+						value={userMessage}
+						onChange={(e) => setUserMessage(e.target.value)}
+						placeholder="Ask LegAI a question"
 						variant={'filled'}
 						colorScheme="gray"
 						_focus={{
 							backgroundColor: '#ecf2f6',
 						}}
 						overflowWrap={'wrap'}
+						disabled={inputDisabled}
 					/>
 					<IconButton
 						colorScheme="red"
 						aria-label="Send Message"
 						position={'absolute'}
 						// marginLeft={'auto'}
+						type="submit"
 						left="93%"
+						disabled={inputDisabled}
 					>
 						<ArrowRightIcon />
 					</IconButton>
@@ -100,20 +135,33 @@ const ChatInput = () => {
 };
 
 const ChatSidebar = ({ activeChatID }) => {
-	const cases = [...caseData];
+	const [cases, setCases] = useState([]);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const res = await fetch('http://localhost:8080/cases');
+			const data = await res.json();
+			console.log(data);
+			setCases(data);
+		};
+		fetchData();
+		return () => {};
+	}, []);
+
 	return (
 		<Flex justifyContent={'center'} flexDir={'column'}>
 			<Flex margin="128px 0" justifyContent={'center'}>
-				<Heading color="white">EPIC LAW AI WHAT</Heading>
+				<Heading color="white">LegAI</Heading>
 			</Flex>
-			{cases.map((lawcase, i) => {
+			{cases?.map((lawcase, i) => {
 				return (
 					<CaseCards
-						caseNumber={lawcase.caseNumber}
-						clientName={lawcase.clientName}
-						tag={lawcase.tag}
+						caseNumber={lawcase.case_number}
+						clientName={lawcase.client_name}
+						tag={lawcase.category}
 						key={`case-${i}`}
-						active={activeChatID == lawcase.caseNumber}
+						active={activeChatID == lawcase.id}
+						threadID={lawcase.id}
 					/>
 				);
 			})}
@@ -121,20 +169,41 @@ const ChatSidebar = ({ activeChatID }) => {
 	);
 };
 
-const ChatComponent = ({ chatID }) => {
-	const messages = [...chatData.conversation.messages];
+const ChatComponent = ({ chatID, noChat }) => {
+	// const messages = [...chatData.conversation.messages];
+	const [messages, setMessages] = useState([]);
+	const [userMessage, setUserMessage] = useState('');
+	const [inputDisabled, setInputDisabled] = useState(false);
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const trig = await fetch(`http://localhost:8080/case/${chatID}/process`, {
+				method: 'GET',
+			});
+			console.log(trig);
+			const res = await fetch(`http://localhost:8080/case/${chatID}/chat`, {
+				method: 'GET',
+			});
+			const data = await res.json();
+			console.log(data);
+			setMessages(data.messages);
+		};
+		if (!noChat) {
+			fetchData();
+		}
+	}, []);
 	return (
 		<Grid
 			gridTemplateColumns={'2.5fr 7.5fr'}
-			width="100vw"
+			width="90vw"
 			height="100vh"
 			overflowX={'hidden'}
 		>
-			<Flex flexDirection={'column'} height="100vh">
+			<Flex flexDirection={'column'} height="100vh" margin="0 32px">
 				<Box
 					overflowY="auto" // Make the Box scrollable
 					// height="calc(100% - 65px - 32px)" // Deduct the height of the input and its margin
-					// paddingBottom="97px" // Space for the input at the bottom
+					paddingBottom="97px" // Space for the input at the bottom
 					backgroundColor={'transparent'}
 				>
 					<ChatSidebar activeChatID={chatID} />
@@ -147,25 +216,39 @@ const ChatComponent = ({ chatID }) => {
 				// backgroundColor={'#FAFBFF'}
 				height="100vh"
 			>
-				<ChatHeader caseNumber={163} clientName={'John Smith'} />
-				<Box
-					overflowY="auto" // Make the Box scrollable
-					height="calc(100% - 65px - 32px)" // Deduct the height of the input and its margin
-					paddingBottom="97px" // Space for the input at the bottom
-					backgroundColor={'transparent'}
-				>
-					{messages.map((message, i) => {
-						return (
-							<ChatBoxes
-								role={message.role}
-								content={message.content}
-								key={`message-${i}`}
-							/>
-						);
-					})}
-				</Box>
-
-				<ChatInput />
+				{!noChat ? (
+					<>
+						<ChatHeader caseNumber={163} clientName={'John Smith'} />
+						<Box
+							overflowY="auto" // Make the Box scrollable
+							height="calc(100% - 65px - 30px)" // Deduct the height of the input and its margin
+							paddingBottom="97px" // Space for the input at the bottom
+							backgroundColor={'transparent'}
+						>
+							{messages?.map((message, i) => {
+								return (
+									<ChatBoxes
+										role={message.role}
+										content={message.content}
+										key={`message-${i}`}
+									/>
+								);
+							})}
+						</Box>
+						<Box height="25vh" bgColor="rgba(0,0,0,0)" />
+						<ChatInput
+							setMessages={setMessages}
+							userMessage={userMessage}
+							setUserMessage={setUserMessage}
+							inputDisabled={inputDisabled}
+							setInputDisabled={setInputDisabled}
+							messages={messages}
+							chatID={chatID}
+						/>
+					</>
+				) : (
+					<></>
+				)}
 			</Flex>
 		</Grid>
 	);

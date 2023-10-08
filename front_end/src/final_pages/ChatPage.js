@@ -1,12 +1,21 @@
 'use client';
 
 import ChatComponent from '@/components/ChatComponent';
-import { Box } from '@chakra-ui/react';
-const ChatPage = ({ chatID }) => {
+import { Flex } from '@chakra-ui/react';
+import Navbar from '@/components/Navbar';
+const ChatPage = ({ chatID, noChat }) => {
 	return (
-		<Box overflowY={'scroll'} maxHeight={'100vh'} overflowX={'hidden'}>
-			<ChatComponent chatID={chatID} />
-		</Box>
+		<>
+			{/* <Navbar /> */}
+			<Flex
+				overflowY={'scroll'}
+				maxHeight={'calc(100vh-100px)'}
+				overflowX={'hidden'}
+				justifyContent={'center'}
+			>
+				<ChatComponent chatID={chatID} noChat={noChat} />
+			</Flex>
+		</>
 	);
 };
 

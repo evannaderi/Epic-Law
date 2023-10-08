@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 const CaseCards = ({ caseNumber, threadID, clientName, tag, active }) => {
 	const router = useRouter();
 	const handleClick = () => {
-		router.push(`/chats/${caseNumber}`);
+		router.push(`/chats/${threadID}`);
 	};
 	return (
 		<Flex
