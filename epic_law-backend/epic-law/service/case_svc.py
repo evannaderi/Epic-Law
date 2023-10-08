@@ -64,27 +64,6 @@ def get_case_files(case_id: str, db: Session):
 
 
 
-def get_case_chat(case_id: str, db: Session):
-    chat: entities.CaseChat
-    chat = db.query(entities.CaseChat).filter(entities.CaseChat.case_id == case_id).first()
-    chatResponse = schema.CaseChatResponse(id=chat.id, case_id=chat.case_id, messages=[])
-    totalMessages = len(chat.systemMessages) + len(chat.userMessages)
-    resultMessages = [schema.Message(role="", content="") for _ in range(totalMessages)]
-
-    i = 0
-    for message in chat.systemMessages:
-        resultMessages[i] = schema.Message(role="system", content=message)
-        i = i + 2
-
-
-    i = 1
-    for message in chat.userMessages:
-        resultMessages[i] = schema.Message(role="user", content=message)
-        i = i + 2
-
-    chatResponse.messages = resultMessages
-    return chatResponse
-
 
 def post_chat_message(case_id: str, type: str, chat: schema.ChatInput, db: Session):
     currChat: entities.CaseChat
@@ -130,6 +109,37 @@ def send_prompt_and_get_response(query):
     print(res)
     return res
 
+
+def get_transformed_chat(chat: entities.CaseChat):
+    chatResponse = schema.CaseChatResponse(id=chat.id, case_id=chat.case_id, messages=[])
+    totalMessages = len(chat.systemMessages) + len(chat.userMessages)
+    resultMessages = [schema.Message(role="", content="") for _ in range(totalMessages)]
+
+    print(totalMessages)
+    print(len(resultMessages))
+
+    i = 0
+    for message in chat.systemMessages:
+        if i < len(resultMessages):
+            resultMessages[i] = schema.Message(role="system", content=message)
+            i = i + 2
+
+
+    i = 1
+    for message in chat.userMessages:
+        if i < len(resultMessages):
+            resultMessages[i] = schema.Message(role="user", content=message)
+            i = i + 2
+
+    chatResponse.messages = resultMessages
+    return chatResponse
+
+def get_case_chat(case_id: str, db: Session):
+    chat: entities.CaseChat
+    chat = db.query(entities.CaseChat).filter(entities.CaseChat.case_id == case_id).first()
+    return get_transformed_chat(chat)
+
+
 def query_case_info(query: schema.QueryInput, case_id: str, db: Session):
 
     res = send_prompt_and_get_response(query.query)
@@ -138,7 +148,7 @@ def query_case_info(query: schema.QueryInput, case_id: str, db: Session):
 
     currChat = post_chat_message(case_id, "system", schema.ChatInput(id="", case_id="", userMessage=res), db)
 
-    return currChat
+    return get_transformed_chat(currChat)
 
 
 
